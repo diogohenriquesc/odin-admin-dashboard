@@ -1,0 +1,101 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+#root,
+#__next {
+  isolation: isolate;
+}
+
+:root {
+  --ff-heading: 'IBM Plex Sans Condensed', sans-serif;
+  --ff-regular: 'IBM Plex Sans', sans-serif;
+  --bg-sidebar: rgb(42, 157, 143);
+  --bg-main: #F5F3F5;
+   /* // #EEF0F2 */
+  --bg-header: #fff;
+  --clr-neutral: #fff;
+}
+
+.sidebar {
+  background-color: var(--bg-sidebar);
+  padding: 1.4375rem;
+  color: var(--clr-neutral);
+  font-family: var(--ff-heading);
+}
+
+.sidebar__brand , .sidebar__link {
+  display: flex;
+  align-items: center;
+}
+
+.sidebar__brand {
+  gap: 1.25rem;
+  margin-bottom: 3.75rem;
+}
+
+.sidebar__brand svg {
+  width: 2.25rem;
+  fill: var(--clr-neutral);
+}
+
+.sidebar__list {
+  list-style: none;
+}
+
+.sidebar__list:first-of-type {
+  margin-bottom: 5rem;
+}
+
+.sidebar__item + .sidebar__item {
+  margin-top: 1.875rem;
+}
+
+.sidebar__link {
+  text-decoration: none;
+  color: inherit;
+  gap: 1.75rem;
+}
+
+.sidebar__link svg {
+  width: 24px;
+  fill: var(--clr-neutral);
+}
